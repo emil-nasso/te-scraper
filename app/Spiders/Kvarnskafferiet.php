@@ -6,22 +6,22 @@ use App\Enums\TeaStore;
 use App\Enums\TeaType;
 use App\Spiders\Drivers\Abicart;
 
-class TeKungen extends Abicart
+class Kvarnskafferiet extends Abicart
 {
-    protected string $baseUrl = "https://www.tekungen.se/backend/jsonrpc/v1?webshop=47000&language=sv&vat_country=SE";
-    protected TeaStore $store = TeaStore::TEKUNGEN;
+    protected string $baseUrl = "https://kvarnskafferiet.se/backend/jsonrpc/v1?webshop=94235&language=sv&vat_country=SE";
+    protected TeaStore $store = TeaStore::KVARNSKAFFERIET;
 
     public array $articleGroups = [
         [
-            'articleGroup' => 2637230,
+            'articleGroup' => 6816301,
             'teaType' => TeaType::GREEN,
         ],
         [
-            'articleGroup' => 2637231,
+            'articleGroup' => 6816307,
             'teaType' => TeaType::OOLONG,
         ],
         [
-            'articleGroup' => 2637229,
+            'articleGroup' => 6816311,
             'teaType' => TeaType::BLACK,
         ],
     ];

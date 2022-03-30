@@ -40,6 +40,9 @@
                 <option value="desc">descending</option>
             </select>
         </div>
+        <div>
+            <button class="border rounded bg-gray-100 shadow px-2 py-1 mt-2" wire:action="resetFilters">Reset filters</button>
+        </div>
     </div>
 
     {{-- @dump($teas) --}}

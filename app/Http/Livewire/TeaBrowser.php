@@ -25,6 +25,11 @@ class TeaBrowser extends Component
         }
     }
 
+    public function resetFilters()
+    {
+        $this->reset();
+    }
+
     public function render()
     {
         $teas = Tea::query()
